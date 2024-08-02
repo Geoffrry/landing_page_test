@@ -16,13 +16,11 @@ const router = createRouter({
     if (to.hash) {
       return {
         el: to.hash,
-        behavior: "smooth",
+        behavior: "smooth", // Smooth scrolling
       };
     }
     return savedPosition || { top: 0 };
   },
 });
 
-const app = createApp(App);
-app.use(router);
-app.mount("#app");
+createApp(App).use(router).mount("#app");

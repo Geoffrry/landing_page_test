@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <navbar-component></navbar-component>
+    <NavbarComponent />
     <main class="container">
       <router-view></router-view>
     </main>
-    <footer-section-component></footer-section-component>
+    <FooterSectionComponent />
   </div>
 </template>
 

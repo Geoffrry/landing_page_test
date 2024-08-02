@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <!-- Vue.js -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@3.3.4"></script>
+    <script src="https://unpkg.com/vue@next"></script>
     <!-- Vue Router -->
-    <script src="https://cdn.jsdelivr.net/npm/vue-router@3.5.4"></script>
+    <script src="https://unpkg.com/vue-router@next"></script>
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -26,19 +26,10 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <style>
-      /* Your CSS styles here */
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Your HTML content here -->
-    <div id="app">
-      <navbar-component></navbar-component>
-      <main class="container">
-        <router-view></router-view>
-      </main>
-      <footer-section-component></footer-section-component>
-    </div>
-    <script src="app.js"></script>
+    <div id="app"></div>
   </body>
 </html>
