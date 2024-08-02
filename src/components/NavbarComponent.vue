@@ -82,7 +82,15 @@ export default {
           });
         }
       } else {
-        this.$router.push("/#about");
+        this.$router.push("/").then(() => {
+          const aboutSection = document.getElementById("about");
+          if (aboutSection) {
+            window.scrollTo({
+              top: aboutSection.offsetTop - 60,
+              behavior: "smooth",
+            });
+          }
+        });
       }
     },
     showDropdown() {

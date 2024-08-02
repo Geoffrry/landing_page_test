@@ -28,12 +28,12 @@ html {
 
 .navbar-brand {
   font-size: 2.5rem;
-  margin-left: 60px;
+  margin-left: 20px;
 }
 
 .navbar-nav .nav-link {
-  font-size: 2rem;
-  margin-right: 20px;
+  font-size: 1.5rem;
+  margin-right: 10px;
 }
 
 footer {
@@ -42,7 +42,7 @@ footer {
   text-align: center;
   padding: 10px;
   border-top: 2px solid black;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .dropdown-menu {
@@ -69,38 +69,71 @@ footer {
 
 .hero {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: right;
+  padding: 20px 0;
   background-color: #f8f9fa;
   height: 70vh;
-  box-sizing: border-box;
+  text-align: center;
 }
 
 .hero-text {
-  flex: 1;
-  text-align: right;
-}
-
-.hero-text h1 {
-  font-size: 4rem;
   margin-bottom: 20px;
 }
 
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
 .hero-text p {
-  font-size: 2rem;
-  margin-bottom: 40px;
+  font-size: 1.2rem;
 }
 
 .hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
+  text-align: center;
 }
 
 .hero-image img {
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+
+  .hero-text {
+    flex: 1;
+    margin-right: 40px;
+    text-align: right;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+
+  .hero-image {
+    flex: 1;
+  }
+
+  .navbar-brand {
+    margin-left: 60px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 2rem;
+    margin-right: 20px;
+  }
 }
 
 .content-section {
@@ -112,7 +145,6 @@ footer {
   flex-direction: column;
   align-items: left;
   text-align: left;
-  margin-top: 20px;
 }
 
 .profile-detail-header {
@@ -195,47 +227,4 @@ footer {
 
 p {
   margin: 0pt;
-}
-
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    height: auto;
-    padding: 20px;
-  }
-  .hero-text {
-    text-align: center;
-  }
-  .hero-text h1 {
-    font-size: 3rem;
-  }
-  .hero-text p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-  .hero-image {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .navbar-brand {
-    font-size: 2rem;
-    margin-left: 20px;
-  }
-  .navbar-nav .nav-link {
-    font-size: 1.5rem;
-    margin-right: 10px;
-  }
-  .hero-text h1 {
-    font-size: 2.5rem;
-  }
-  .hero-text p {
-    font-size: 1.2rem;
-  }
-  .btn-primary {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
 }
